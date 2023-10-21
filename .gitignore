@@ -46,3 +46,6 @@ loaderio-*.txt
 
 # Project
 mongodb_python_manager.egg-info/
+.coverage
+htmlcov/
+publish.sh

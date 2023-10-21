@@ -2,7 +2,7 @@ from setuptools import setup
 
 setup(
     name="mongodb_python_manager",
-    version="1.5.5",
+    version="1.7.0",
     packages=["mongodb_python_manager"],
     install_requires=[
         "pymongo==4.3.3",
