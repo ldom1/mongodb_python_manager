@@ -41,7 +41,7 @@ class MongoDBManager:
         )
 
     def __version__(self):
-        return "1.5.5"
+        return "1.7.0"
 
     def get_client(self) -> tuple((pymongo.MongoClient, str)):
         """
