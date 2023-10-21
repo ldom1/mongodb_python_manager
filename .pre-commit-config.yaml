@@ -1,0 +1,31 @@
+repos:
+-   repo: https://github.com/psf/black
+    rev: '23.1.0'
+    hooks:
+    -   id: black
+        args: ['.']
+
+#-   repo: https://github.com/pycqa/pydocstyle
+#    rev: '6.3.0'
+#    hooks:
+#    -   id: pydocstyle
+#        args: ['.', '--ignore=D205,D212']
+
+-   repo: https://github.com/hadialqattan/pycln
+    rev: 'v2.1.5'
+    hooks:
+    -   id: pycln
+        args: ['.']
+
+-   repo: https://github.com/pre-commit/pre-commit-hooks
+    rev: 'v4.4.0'
+    hooks:
+    -   id: trailing-whitespace
+
+-   repo: local
+    hooks:
+    -   id: unittest
+        name: run unit tests
+        language: system
+        pass_filenames: false
+        entry: poetry run coverage run -m pytest
