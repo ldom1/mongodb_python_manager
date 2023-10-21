@@ -19,6 +19,7 @@ def mongodb_manager():
         mongo_db_password=os.environ.get("MONGO_DB_PASSWORD"),
         mongo_db_cluster=os.environ.get("MONGO_DB_CLUSTER"),
         mongodb_db_name="MongoDBPythonManagerTest",
+        is_async=True,
     )
     return mongodb_manager
 

@@ -1,5 +1,48 @@
-.venv/
+# MacOS file to ignore
+.DS_Store
+
+# Executable files
+*.exe
+*.out
+*.app
+package_installer
+
+# Poetry
+#poetry.lock
+
+# Pytest
+pytest_cache
+build/
+dist/
+
+# Jupyter Notebook
+.ipynb_checkpoints
+
+# Python
+__pycache__/
+.venv
 .pytest_cache/
 build/
-mongodb_python_manager.egg-info/
+.eggs
+
+# Environment variables
 .env
+.vercel
+
+# terraform
+terraform/variables.tf
+terraform/.terraform
+terraform/.terraform.lock.hcl
+terraform/terraform.tfstate
+terraform/terraform.tfstate.backup
+terraform/terraform.tfvars
+terraform/.terraform.tfstate.lock.info
+
+# docker
+docker-compose.yml
+
+# Loader.io
+loaderio-*.txt
+
+# Project
+mongodb_python_manager.egg-info/
